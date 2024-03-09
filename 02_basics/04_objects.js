@@ -66,5 +66,19 @@ console.log(Object.entries(tinderUser))
         //Returns an array of key/values of the enumerable properties of an object
         //[ [ 'id', '123abc' ], [ 'name', 'ridhhdi' ], [ 'loggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('loggedIn'))   //true
+// console.log(tinderUser.hasOwnProperty('loggedIn'))   //true
             //Determines whether an object has a property with the specified name
+
+
+
+const course = {
+    courseName : "javaScript",
+    price : 444,
+    courseInstructor : "ridhdhi"
+}
+
+const{courseInstructor} = course
+console.log(courseInstructor); //ridhdhi 
+
+const{courseInstructor:instructor} = course
+console.log(instructor);       //ridhdhi  
