@@ -23,6 +23,9 @@ const detail ={
     age : 20 ,
     year : 3
 }
+
+detail.sem = 5
+
 detail.greeting = function(){
     console.log("hello !!!");
 }
@@ -34,3 +37,14 @@ detail.greeting2 = function(){
     console.log(`hello !!!  ${this.name}`);
 }
 console.log(detail.greeting2())  //hello !!!  ridhdhi
+console.log(detail)
+    /*
+    {
+        name: 'ridhdhi',
+        age: 20,
+        year: 3,
+        sem: 5,
+        greeting: [Function (anonymous)],
+        greeting2: [Function (anonymous)]
+    }
+    */
